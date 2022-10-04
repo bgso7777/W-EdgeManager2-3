@@ -1,0 +1,122 @@
+{
+  "properties" : {
+    "JKGP" : {
+      "type" : "keyword"
+    },
+    "JKWI" : {
+      "type" : "keyword"
+    },
+    "appId" : {
+      "type" : "keyword"
+    },
+    "brNo" : {
+      "type" : "keyword"
+    },
+    "channel" : {
+      "type" : "keyword"
+    },
+    "deptName" : {
+      "type" : "keyword"
+    },
+    "deviceId" : {
+      "type" : "keyword"
+    },
+    "deviceType" : {
+      "type" : "keyword"
+    },
+    "documentId" : {
+      "type" : "keyword"
+    },
+    "eventId" : {
+      "type" : "long"
+    },
+    "firstWork" : {
+      "type" : "keyword"
+    },
+    "hostName" : {
+      "type" : "keyword"
+    },
+    "hwnNo" : {
+      "type" : "keyword"
+    },
+    "indexName" : {
+      "type" : "keyword"
+    },
+    "ip" : {
+      "type" : "keyword"
+    },
+    "keywords" : {
+      "type" : "keyword"
+    },
+    "level" : {
+      "type" : "long"
+    },
+    "maxAddress" : {
+      "type" : "keyword"
+    },
+    "message" : {
+      "type" : "keyword"
+    },
+    "newProcessId" : {
+      "type" : "keyword"
+    },
+    "newProcessName" : {
+      "type" : "keyword"
+    },
+    "osType" : {
+      "type" : "keyword"
+    },
+    "parentProcessId" : {
+      "type" : "keyword"
+    },
+    "parentProcessName" : {
+      "type" : "keyword"
+    },
+    "pcName" : {
+      "type" : "keyword"
+    },
+    "phoneNo" : {
+      "type" : "keyword"
+    },
+    "service" : {
+      "type" : "keyword"
+    },
+    "source" : {
+      "type" : "keyword"
+    },
+    "ssoBrNo" : {
+      "type" : "keyword"
+    },
+    "ssoType" : {
+      "type" : "keyword"
+    },
+    "statisticsValue" : {
+      "type" : "keyword"
+    },
+    "termNo" : {
+      "type" : "keyword"
+    },
+    "timeCreated" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "timeCreatedSystemTime" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "timeCurrent" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "timeRegistered" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "userId" : {
+      "type" : "keyword"
+    },
+    "userName" : {
+      "type" : "keyword"
+    }
+  }
+}

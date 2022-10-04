@@ -1,0 +1,148 @@
+{
+  "header": {
+    "source": null,
+    "service": null,
+    "destination": null
+  },
+  "body": {
+    "result": 1,
+    "errorDescription": "",
+    "collection": {
+      "gatherthreshold": {
+        "id": "samplecommonGatherthreshold",
+        "cpuUsage": "99",
+        "diskUsage": "99",
+        "memoryUsage": "99",
+        "intervalType": "periodMM",
+        "interval": "10"
+      },
+      "sendOption": {
+        "id": "samplecommonSendOption",
+        "sendToCollector": "true",
+        "intervalType": "periodMS",
+        "interval": "3000",
+        "maxRow": "1"
+      },
+      "policies": {
+        "monitoringPerformance": {
+          "clientPerfResource": {
+            "id": "clientPerfResource",
+            "url": "${COLLECTOR_URL}/da/log/clientperformancelog",
+            "intervalType": "periodSS",
+            "interval": "3",
+            "columns": [
+              "cpuUsage",
+              "threadCount",
+              "handleCount",
+              "memoryTotal",
+              "memoryUsed",
+              "memoryUsage",
+              "poolPaged",
+              "machineName",
+              "poolNonpaged",
+              "diskRead",
+              "diskWrite",
+              "diskTotal",
+              "diskUsed",
+              "diskUsage",
+              "diskTime",
+              "networkSent",
+              "networkReceived",
+              "networkUsed",
+              "cpuTemperature",
+              "memoryVirtualTotal",
+              "timeCreated"
+            ],
+            "gatherThreshold": {
+              "id": "sampleclientPerfResourcegatherThreshold",
+              "cpuUsage": "99",
+              "diskUsage": "99",
+              "memoryUsage": "99",
+              "intervalType": "periodMM",
+              "interval": "10"
+            },
+            "sendOption": {
+              "id": "sampleclientPerfResourcesendOption",
+              "sendToCollector": "true",
+              "intervalType": "periodSS",
+              "interval": "3",
+              "maxRow": "1"
+            }
+          }
+        },
+        "monitoringWindowsManagement": {
+          "clientProgramListResource": {
+            "id": "clientProgramListResource",
+            "url": "${COLLECTOR_URL}/da/log/clientprogramlistresourcelog",
+            "intervalType": "once",
+            "interval": "1",
+            "columns": [
+              "name",
+              "version",
+              "publisher",
+              "size",
+              "installDate",
+              "timeCreated"
+            ],
+            "gatherThreshold": {
+              "id": "sampleclientProgramListResourcegatherThreshold",
+              "cpuUsage": "99",
+              "diskUsage": "99",
+              "memoryUsage": "99",
+              "intervalType": "periodMM",
+              "interval": "10"
+            },
+            "sendOption": {
+              "id": "sampleclientProgramListResourcesendOption",
+              "sendToCollector": "true",
+              "intervalType": "periodMS",
+              "interval": "3000",
+              "maxRow": "1"
+            }
+          },
+          "clientProcessResource": {
+            "id": "clientProcessResource",
+            "url": "${COLLECTOR_URL}/da/log/clientresourcelog",
+            "intervalType": "periodSS",
+            "interval": "5",
+            "columns": [
+              "pid",
+              "procName",
+              "procCpuUsage",
+              "procThreadCount",
+              "procHandleCount",
+              "procWorkingSet",
+              "procPoolPage",
+              "procPoolNonpaged",
+              "procIoRead",
+              "procIoWrite",
+              "memoryTotal",
+              "timeCreated",
+              "procIntegrityLevel",
+              "procNetworkSent",
+              "procNetworkReceived",
+              "procFileDescription"
+            ],
+            "gatherThreshold": {
+              "id": "sampleclientProcessResourcegatherThreshold",
+              "cpuUsage": "99",
+              "diskUsage": "99",
+              "memoryUsage": "99",
+              "intervalType": "periodMM",
+              "interval": "10"
+            },
+            "sendOption": {
+              "id": "sampleclientProcessResourcesendOption",
+              "sendToCollector": "true",
+              "intervalType": "periodSS",
+              "interval": "5",
+              "maxRow": "1"
+            },
+            "selectOption": null
+          }
+        }
+      }
+    },
+    "error": ""
+  }
+}

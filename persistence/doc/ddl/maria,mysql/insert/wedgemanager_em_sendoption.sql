@@ -1,0 +1,15 @@
+INSERT INTO wedgemanager.em_sendoption (ID, sentToCollector, INTERVALTYPE, _INTERVAL, MAXROW) VALUES ('sampleapplicationErrorsendOption', 'true', 'periodSS', '1000', '100');
+INSERT INTO wedgemanager.em_sendoption (ID, sentToCollector, INTERVALTYPE, _INTERVAL, MAXROW) VALUES ('sampleblueScreensendOption', 'true', 'periodSS', '1000', '100');
+INSERT INTO wedgemanager.em_sendoption (ID, sentToCollector, INTERVALTYPE, _INTERVAL, MAXROW) VALUES ('sampleclientDefragAnalysisResourcesendOption', 'true', 'periodSS', '1000', '100');
+INSERT INTO wedgemanager.em_sendoption (ID, sentToCollector, INTERVALTYPE, _INTERVAL, MAXROW) VALUES ('sampleclientHWInfoResourcesendOption', 'true', 'periodSS', '1000', '100');
+INSERT INTO wedgemanager.em_sendoption (ID, sentToCollector, INTERVALTYPE, _INTERVAL, MAXROW) VALUES ('sampleclientMBRResourcesendOption', 'true', 'periodSS', '1000', '100');
+INSERT INTO wedgemanager.em_sendoption (ID, sentToCollector, INTERVALTYPE, _INTERVAL, MAXROW) VALUES ('sampleclientPerfResourcesendOption', 'true', 'periodSS', '1000', '100');
+INSERT INTO wedgemanager.em_sendoption (ID, sentToCollector, INTERVALTYPE, _INTERVAL, MAXROW) VALUES ('sampleclientProcessResourcesendOption', 'true', 'periodSS', '1000', '100');
+INSERT INTO wedgemanager.em_sendoption (ID, sentToCollector, INTERVALTYPE, _INTERVAL, MAXROW) VALUES ('sampleclientProgramListResourcesendOption', 'true', 'periodSS', '1000', '100');
+INSERT INTO wedgemanager.em_sendoption (ID, sentToCollector, INTERVALTYPE, _INTERVAL, MAXROW) VALUES ('sampleclientWindowsUpdateListResourcesendOption', 'true', 'periodSS', '1000', '100');
+INSERT INTO wedgemanager.em_sendoption (ID, sentToCollector, INTERVALTYPE, _INTERVAL, MAXROW) VALUES ('samplecollectWindowsEventLogsendOption', 'true', 'periodSS', '1000', '100');
+INSERT INTO wedgemanager.em_sendoption (ID, sentToCollector, INTERVALTYPE, _INTERVAL, MAXROW) VALUES ('samplecommonSendOption', 'true', 'periodSS', '1000', '100');
+INSERT INTO wedgemanager.em_sendoption (ID, sentToCollector, INTERVALTYPE, _INTERVAL, MAXROW) VALUES ('sampledeviceDriverErrorsendOption', 'true', 'periodSS', '1000', '100');
+INSERT INTO wedgemanager.em_sendoption (ID, sentToCollector, INTERVALTYPE, _INTERVAL, MAXROW) VALUES ('samplehardwareErrorsendOption', 'true', 'periodSS', '1000', '100');
+INSERT INTO wedgemanager.em_sendoption (ID, sentToCollector, INTERVALTYPE, _INTERVAL, MAXROW) VALUES ('samplepcOnOffEventLogsendOption', 'true', 'periodSS', '1000', '100');
+INSERT INTO wedgemanager.em_sendoption (ID, sentToCollector, INTERVALTYPE, _INTERVAL, MAXROW) VALUES ('sampleuserTermMonitorLogsendOption', 'true', 'periodSS', '1000', '100');

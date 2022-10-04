@@ -1,0 +1,14 @@
+INSERT INTO wedgemanager.em_collection_info (ID, COLLECTIONID) VALUES ('samplecollectionInfo', 'sampleapplicationError');
+INSERT INTO wedgemanager.em_collection_info (ID, COLLECTIONID) VALUES ('samplecollectionInfo', 'sampleblueScreen');
+INSERT INTO wedgemanager.em_collection_info (ID, COLLECTIONID) VALUES ('samplecollectionInfo', 'sampleclientDefragAnalysisResource');
+INSERT INTO wedgemanager.em_collection_info (ID, COLLECTIONID) VALUES ('samplecollectionInfo', 'sampleclientHWInfoResource');
+INSERT INTO wedgemanager.em_collection_info (ID, COLLECTIONID) VALUES ('samplecollectionInfo', 'sampleclientMBRResource');
+INSERT INTO wedgemanager.em_collection_info (ID, COLLECTIONID) VALUES ('samplecollectionInfo', 'sampleclientPerfResource');
+INSERT INTO wedgemanager.em_collection_info (ID, COLLECTIONID) VALUES ('samplecollectionInfo', 'sampleclientProcessResource');
+INSERT INTO wedgemanager.em_collection_info (ID, COLLECTIONID) VALUES ('samplecollectionInfo', 'sampleclientProgramListResource');
+INSERT INTO wedgemanager.em_collection_info (ID, COLLECTIONID) VALUES ('samplecollectionInfo', 'sampleclientWindowsUpdateListResource');
+INSERT INTO wedgemanager.em_collection_info (ID, COLLECTIONID) VALUES ('samplecollectionInfo', 'samplecollectWindowsEventLog');
+INSERT INTO wedgemanager.em_collection_info (ID, COLLECTIONID) VALUES ('samplecollectionInfo', 'sampledeviceDriverError');
+INSERT INTO wedgemanager.em_collection_info (ID, COLLECTIONID) VALUES ('samplecollectionInfo', 'samplehardwareError');
+INSERT INTO wedgemanager.em_collection_info (ID, COLLECTIONID) VALUES ('samplecollectionInfo', 'samplepcOnOffEventLog');
+INSERT INTO wedgemanager.em_collection_info (ID, COLLECTIONID) VALUES ('samplecollectionInfo', 'sampleuserTermMonitorLog');

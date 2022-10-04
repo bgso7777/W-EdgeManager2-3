@@ -1,0 +1,208 @@
+{
+  "properties" : {
+    "JKGP" : {
+      "type" : "keyword"
+    },
+    "JKWI" : {
+      "type" : "keyword"
+    },
+    "appId" : {
+      "type" : "keyword"
+    },
+    "brNo" : {
+      "type" : "keyword"
+    },
+    "deptName" : {
+      "type" : "keyword"
+    },
+    "deviceId" : {
+      "type" : "keyword"
+    },
+    "deviceType" : {
+      "type" : "keyword"
+    },
+    "documentId" : {
+      "type" : "keyword"
+    },
+    "firstWork" : {
+      "type" : "keyword"
+    },
+    "hostName" : {
+      "type" : "keyword"
+    },
+    "hwnNo" : {
+      "type" : "keyword"
+    },
+    "indexName" : {
+      "type" : "keyword"
+    },
+    "integrity" : {
+      "type" : "nested",
+      "properties" : {
+        "elapsedTime" : {
+          "type" : "keyword"
+        },
+        "endTime" : {
+          "type" : "date",
+          "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        },
+        "info" : {
+          "type" : "object",
+          "properties" : {
+            "NetClient5": {
+              "type": "keyword"
+            }
+          }
+        },
+        "integrityData" : {
+          "type" : "nested",
+          "properties" : {
+            "description" : {
+              "type" : "keyword"
+            },
+            "elapsedTime" : {
+              "type" : "keyword"
+            },
+            "endTime" : {
+              "type" : "date",
+              "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+            },
+            "faultReg" : {
+              "type" : "boolean"
+            },
+            "isAlways" : {
+              "type" : "boolean"
+            },
+            "isTargetHome" : {
+              "type" : "boolean"
+            },
+            "message" : {
+              "type" : "keyword"
+            },
+            "name" : {
+              "type" : "keyword"
+            },
+            "pcType" : {
+              "type" : "keyword"
+            },
+            "remoteCode" : {
+              "type" : "keyword"
+            },
+            "result" : {
+              "type" : "integer"
+            },
+            "resultScript" : {
+              "type" : "integer"
+            },
+            "rules" : {
+              "type" : "nested",
+              "properties" : {
+                "description" : {
+                  "type" : "keyword"
+                },
+                "elapsedTime" : {
+                  "type" : "keyword"
+                },
+                "endTime" : {
+                  "type" : "date",
+                  "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+                },
+                "id" : {
+                  "type" : "keyword"
+                },
+                "isFollowUp" : {
+                  "type" : "boolean"
+                },
+                "message" : {
+                  "type" : "keyword"
+                },
+                "name" : {
+                  "type" : "keyword"
+                },
+                "result" : {
+                  "type" : "integer"
+                },
+                "startTime" : {
+                  "type" : "date",
+                  "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+                },
+                "timeFollowUp" : {
+                  "type" : "date",
+                  "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+                }
+              }
+            },
+            "sendErrCnt" : {
+              "type" : "integer"
+            },
+            "startTime" : {
+              "type" : "date",
+              "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+            }
+          }
+        },
+        "result" : {
+          "type" : "integer"
+        },
+        "startTime" : {
+          "type" : "date",
+          "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        }
+      }
+    },
+    "ip" : {
+      "type" : "keyword"
+    },
+    "maxAddress" : {
+      "type" : "keyword"
+    },
+    "osType" : {
+      "type" : "keyword"
+    },
+    "pcName" : {
+      "type" : "keyword"
+    },
+    "phoneNo" : {
+      "type" : "keyword"
+    },
+    "result" : {
+      "type" : "integer"
+    },
+    "service" : {
+      "type" : "keyword"
+    },
+    "source" : {
+      "type" : "keyword"
+    },
+    "ssoBrNo" : {
+      "type" : "keyword"
+    },
+    "ssoType" : {
+      "type" : "keyword"
+    },
+    "statisticsValue" : {
+      "type" : "keyword"
+    },
+    "termNo" : {
+      "type" : "keyword"
+    },
+    "timeCreated" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "timeCurrent" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "timeRegistered" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "userId" : {
+      "type" : "keyword"
+    },
+    "userName" : {
+      "type" : "keyword"
+    }
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "properties" : {
+    "JKGP" : {
+      "type" : "keyword"
+    },
+    "JKWI" : {
+      "type" : "keyword"
+    },
+    "appId" : {
+      "type" : "keyword"
+    },
+    "brNo" : {
+      "type" : "keyword"
+    },
+    "deptName" : {
+      "type" : "keyword"
+    },
+    "deviceId" : {
+      "type" : "keyword"
+    },
+    "deviceType" : {
+      "type" : "keyword"
+    },
+    "documentId" : {
+      "type" : "keyword"
+    },
+    "failCount" : {
+      "type" : "integer"
+    },
+    "failDescriptions" : {
+      "type" : "keyword"
+    },
+    "failIds" : {
+      "type" : "keyword"
+    },
+    "failNames" : {
+      "type" : "keyword"
+    },
+    "faultReg" : {
+      "type" : "boolean"
+    },
+    "firstWork" : {
+      "type" : "keyword"
+    },
+    "hostName" : {
+      "type" : "keyword"
+    },
+    "hwnNo" : {
+      "type" : "keyword"
+    },
+    "indexName" : {
+      "type" : "keyword"
+    },
+    "integrityPolicyGroupDescription" : {
+      "type" : "keyword"
+    },
+    "integrityPolicyGroupName" : {
+      "type" : "keyword"
+    },
+    "integrityPolicyGroupTodayTotalErrorCount" : {
+      "type" : "integer"
+    },
+    "integrityResult" : {
+      "type" : "integer"
+    },
+    "ip" : {
+      "type" : "keyword"
+    },
+    "isAutoFix" : {
+      "type" : "boolean"
+    },
+    "isEmailSendSucess" : {
+      "type" : "boolean"
+    },
+    "isSendException" : {
+      "type" : "boolean"
+    },
+    "isShinhanbankAtopTerminalError" : {
+      "type" : "boolean"
+    },
+    "isTargetGolewingMessage" : {
+      "type" : "boolean"
+    },
+    "isTargetHome" : {
+      "type" : "boolean"
+    },
+    "isTargetTerminalErrorSystem" : {
+      "type" : "boolean"
+    },
+    "isUrlSendSucess" : {
+      "type" : "boolean"
+    },
+    "key" : {
+      "type" : "keyword"
+    },
+    "maxAddress" : {
+      "type" : "keyword"
+    },
+    "netClient5" : {
+      "type" : "keyword"
+    },
+    "osType" : {
+      "type" : "keyword"
+    },
+    "parentIds" : {
+      "type" : "keyword"
+    },
+    "pcName" : {
+      "type" : "keyword"
+    },
+    "pcType" : {
+      "type" : "keyword"
+    },
+    "phoneNo" : {
+      "type" : "keyword"
+    },
+    "remoteCode" : {
+      "type" : "keyword"
+    },
+    "responseData" : {
+      "type" : "keyword"
+    },
+    "ruleAlertSendLogRuleData" : {
+      "type" : "nested",
+      "properties" : {
+        "classNames" : {
+          "type" : "keyword"
+        },
+        "description" : {
+          "type" : "keyword"
+        },
+        "displayClassNames" : {
+          "type" : "keyword"
+        },
+        "displayFieldNames" : {
+          "type" : "keyword"
+        },
+        "fieldNames" : {
+          "type" : "keyword"
+        },
+        "name" : {
+          "type" : "keyword"
+        },
+        "pattern" : {
+          "type" : "keyword"
+        },
+        "patternData" : {
+          "type" : "keyword"
+        },
+        "ruleId" : {
+          "type" : "long"
+        },
+        "timeCurrent" : {
+          "type" : "date",
+          "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        }
+      }
+    },
+    "ruleLevelId" : {
+      "type" : "long"
+    },
+    "ruleLevelName" : {
+      "type" : "keyword"
+    },
+    "ruleReceiverEmail" : {
+      "type" : "keyword"
+    },
+    "ruleReceiverId" : {
+      "type" : "long"
+    },
+    "ruleReceiverIdRuleLevelId" : {
+      "type" : "keyword"
+    },
+    "ruleReceiverIsEmail" : {
+      "type" : "boolean"
+    },
+    "ruleReceiverIsUrl" : {
+      "type" : "boolean"
+    },
+    "ruleReceiverName" : {
+      "type" : "keyword"
+    },
+    "ruleReceiverSendUrlData" : {
+      "type" : "keyword"
+    },
+    "ruleReceiverSenderId" : {
+      "type" : "keyword"
+    },
+    "ruleReceiverSenderName" : {
+      "type" : "keyword"
+    },
+    "ruleReceiverUniqueId" : {
+      "type" : "keyword"
+    },
+    "sendContent" : {
+      "type" : "keyword"
+    },
+    "sendContentSummary" : {
+      "type" : "keyword"
+    },
+    "sendErrCnt" : {
+      "type" : "integer"
+    },
+    "sendTitle" : {
+      "type" : "keyword"
+    },
+    "service" : {
+      "type" : "keyword"
+    },
+    "source" : {
+      "type" : "keyword"
+    },
+    "ssoBrNo" : {
+      "type" : "keyword"
+    },
+    "ssoType" : {
+      "type" : "keyword"
+    },
+    "statisticsValue" : {
+      "type" : "keyword"
+    },
+    "termNo" : {
+      "type" : "keyword"
+    },
+    "timeAutoFix" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "timeCreated" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "timeCurrent" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "timeRegistered" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "timeSend" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "userId" : {
+      "type" : "keyword"
+    },
+    "userName" : {
+      "type" : "keyword"
+    }
+  }
+}

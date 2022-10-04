@@ -1,0 +1,338 @@
+{
+  "properties" : {
+    "JKGP" : {
+      "type" : "keyword"
+    },
+    "JKWI" : {
+      "type" : "keyword"
+    },
+    "appId" : {
+      "type" : "keyword"
+    },
+    "brNo" : {
+      "type" : "keyword"
+    },
+    "cpuArchitecture" : {
+      "type" : "keyword"
+    },
+    "cpuCaption" : {
+      "type" : "keyword"
+    },
+    "cpuManufacturer" : {
+      "type" : "keyword"
+    },
+    "cpuMaxClockSpeed" : {
+      "type" : "integer"
+    },
+    "cpuName" : {
+      "type" : "keyword"
+    },
+    "cpuNumberOfCores" : {
+      "type" : "integer"
+    },
+    "cpuStatus" : {
+      "type" : "keyword"
+    },
+    "cpuThreadCount" : {
+      "type" : "integer"
+    },
+    "deptName" : {
+      "type" : "keyword"
+    },
+    "deviceId" : {
+      "type" : "keyword"
+    },
+    "deviceType" : {
+      "type" : "keyword"
+    },
+    "diskCaption" : {
+      "type" : "keyword"
+    },
+    "diskCaption_2" : {
+      "type" : "keyword"
+    },
+    "diskDrive" : {
+      "type" : "nested",
+      "properties" : {
+        "diskCaption" : {
+          "type" : "keyword"
+        },
+        "diskInterfaceType" : {
+          "type" : "keyword"
+        },
+        "diskKBSize" : {
+          "type" : "long"
+        },
+        "diskManufacturer" : {
+          "type" : "keyword"
+        },
+        "diskMediaType" : {
+          "type" : "keyword"
+        },
+        "diskModel" : {
+          "type" : "keyword"
+        },
+        "diskName" : {
+          "type" : "keyword"
+        },
+        "diskSerialNumber" : {
+          "type" : "keyword"
+        },
+        "diskStatus" : {
+          "type" : "keyword"
+        }
+      }
+    },
+    "diskInterfaceType" : {
+      "type" : "keyword"
+    },
+    "diskInterfaceType_2" : {
+      "type" : "keyword"
+    },
+    "diskKBSize" : {
+      "type" : "long"
+    },
+    "diskKBSize_2" : {
+      "type" : "long"
+    },
+    "diskManufacturer" : {
+      "type" : "keyword"
+    },
+    "diskManufacturer_2" : {
+      "type" : "keyword"
+    },
+    "diskMediaType" : {
+      "type" : "keyword"
+    },
+    "diskMediaType_2" : {
+      "type" : "keyword"
+    },
+    "diskModel" : {
+      "type" : "keyword"
+    },
+    "diskModel_2" : {
+      "type" : "keyword"
+    },
+    "diskName" : {
+      "type" : "keyword"
+    },
+    "diskName_2" : {
+      "type" : "keyword"
+    },
+    "diskSerialNumber" : {
+      "type" : "keyword"
+    },
+    "diskSerialNumber_2" : {
+      "type" : "keyword"
+    },
+    "diskStatus" : {
+      "type" : "keyword"
+    },
+    "diskStatus_2" : {
+      "type" : "keyword"
+    },
+    "documentId" : {
+      "type" : "keyword"
+    },
+    "firstWork" : {
+      "type" : "keyword"
+    },
+    "hostName" : {
+      "type" : "keyword"
+    },
+    "hwnNo" : {
+      "type" : "keyword"
+    },
+    "indexName" : {
+      "type" : "keyword"
+    },
+    "ip" : {
+      "type" : "keyword"
+    },
+    "maxAddress" : {
+      "type" : "keyword"
+    },
+    "memBankLabel" : {
+      "type" : "keyword"
+    },
+    "memBankLabel_2" : {
+      "type" : "keyword"
+    },
+    "memCaption" : {
+      "type" : "keyword"
+    },
+    "memCaption_2" : {
+      "type" : "keyword"
+    },
+    "memDeviceLocator" : {
+      "type" : "keyword"
+    },
+    "memDeviceLocator_2" : {
+      "type" : "keyword"
+    },
+    "memManufacturer" : {
+      "type" : "keyword"
+    },
+    "memManufacturer_2" : {
+      "type" : "keyword"
+    },
+    "memMemoryType" : {
+      "type" : "integer"
+    },
+    "memMemoryType_2" : {
+      "type" : "integer"
+    },
+    "memModel" : {
+      "type" : "keyword"
+    },
+    "memModel_2" : {
+      "type" : "keyword"
+    },
+    "memName" : {
+      "type" : "keyword"
+    },
+    "memName_2" : {
+      "type" : "keyword"
+    },
+    "memSerialNumber" : {
+      "type" : "keyword"
+    },
+    "memSerialNumber_2" : {
+      "type" : "keyword"
+    },
+    "memSpeed" : {
+      "type" : "integer"
+    },
+    "memSpeed_2" : {
+      "type" : "integer"
+    },
+    "memStatus" : {
+      "type" : "keyword"
+    },
+    "memStatus_2" : {
+      "type" : "keyword"
+    },
+    "memTotalSize" : {
+      "type" : "long"
+    },
+    "memVirtualTotalSize" : {
+      "type" : "long"
+    },
+    "osArchitecture" : {
+      "type" : "keyword"
+    },
+    "osBuildNumber" : {
+      "type" : "keyword"
+    },
+    "osCaption" : {
+      "type" : "keyword"
+    },
+    "osName" : {
+      "type" : "keyword"
+    },
+    "osSerialNumber" : {
+      "type" : "keyword"
+    },
+    "osServicePackVersion" : {
+      "type" : "keyword"
+    },
+    "osStatus" : {
+      "type" : "keyword"
+    },
+    "osType" : {
+      "type" : "keyword"
+    },
+    "osVersion" : {
+      "type" : "keyword"
+    },
+    "pcCaption" : {
+      "type" : "keyword"
+    },
+    "pcManufacturer" : {
+      "type" : "keyword"
+    },
+    "pcModel" : {
+      "type" : "keyword"
+    },
+    "pcName" : {
+      "type" : "keyword"
+    },
+    "pcStatus" : {
+      "type" : "keyword"
+    },
+    "pcSystemType" : {
+      "type" : "keyword"
+    },
+    "phoneNo" : {
+      "type" : "keyword"
+    },
+    "physicalMemory" : {
+      "type" : "nested",
+      "properties" : {
+        "memBankLabel" : {
+          "type" : "keyword"
+        },
+        "memCaption" : {
+          "type" : "keyword"
+        },
+        "memManufacturer" : {
+          "type" : "keyword"
+        },
+        "memMemoryType" : {
+          "type" : "integer"
+        },
+        "memModel" : {
+          "type" : "keyword"
+        },
+        "memName" : {
+          "type" : "keyword"
+        },
+        "memSerialNumber" : {
+          "type" : "keyword"
+        },
+        "memSpeed" : {
+          "type" : "integer"
+        },
+        "memStatus" : {
+          "type" : "keyword"
+        }
+      }
+    },
+    "service" : {
+      "type" : "keyword"
+    },
+    "source" : {
+      "type" : "keyword"
+    },
+    "ssoBrNo" : {
+      "type" : "keyword"
+    },
+    "ssoType" : {
+      "type" : "keyword"
+    },
+    "statisticsValue" : {
+      "type" : "keyword"
+    },
+    "termNo" : {
+      "type" : "keyword"
+    },
+    "timeCreated" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "timeCurrent" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "timeRegistered" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "userId" : {
+      "type" : "keyword"
+    },
+    "userName" : {
+      "type" : "keyword"
+    }
+  }
+}

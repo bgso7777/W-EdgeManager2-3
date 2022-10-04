@@ -1,0 +1,19 @@
+{
+  "header": {
+    "source": null,
+    "service": "command",
+    "destination": null
+  },
+  "body": {
+    "commandId": "${COMMAND_ID}",
+    "method": "GetFiles",
+    "parameters": {
+      "baseDir": "",
+      "fileList": ${ARRAY_FILE_LIST},
+      "zipFileName": "result.zip",
+      "title": "",
+      "content": ""
+    },
+    "resultUrl": "${MANAGER_URL}/dc/summit/multipart/${COMMAND_TYPE}"
+  }
+}

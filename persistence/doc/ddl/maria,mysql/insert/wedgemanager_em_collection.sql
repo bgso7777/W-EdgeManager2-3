@@ -1,0 +1,1 @@
+INSERT INTO wedgemanager.em_collection (ID, GATHERTHRESHOLDID, SENDOPTIONID, COLLECTIONINFOID) VALUES ('sample', 'samplecommonGatherthreshold', 'samplecommonSendOption', 'samplecollectionInfo');

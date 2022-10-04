@@ -1,0 +1,12 @@
+{
+  "header": {
+    "source": null,
+    "service": "newInfoCollection",
+    "destination": null
+  },
+  "body": {
+    "policy": {
+      "url": "${COLLECTOR_URL}/da/update/policy/${COLLECTION_TYPE}"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "header": {
+    "source": null,
+    "service": null,
+    "destination": null
+  },
+  "body": {
+    "result": 1,
+    "errorDescription": "",
+    "error": ""
+  }
+}

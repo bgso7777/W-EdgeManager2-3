@@ -1,0 +1,1 @@
+INSERT INTO wedgemanager.em_integrity (ID, INTEGRITYPOLICYID, URL) VALUES ('lastTestTwo', 'lastTestTwo', null);

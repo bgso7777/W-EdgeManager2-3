@@ -1,0 +1,1160 @@
+{
+    "header": {
+        "msgId": null,
+        "source": null,
+        "service": null,
+        "destination": null,
+        "deviceId": "Windows.00330-52643-11959-AAOEM.Inswave.Prod",
+        "deviceType": null,
+        "appId": "Windows.Inswave.Prod",
+        "osType": "Windows",
+        "userId": null,
+        "termNo": null,
+        "ssoBrNo": null,
+        "brNo": null,
+        "deptName": null,
+        "hwnNo": null,
+        "userName": null,
+        "ssoType": null,
+        "pcName": null
+    },
+    "body": {
+        "result": 1,
+        "errorDescription": "",
+        "collection": {
+            "gatherthreshold": {
+                "id": "samplecommonGatherthreshold",
+                "cpuUsage": "90",
+                "diskUsage": "90",
+                "memoryUsage": "90",
+                "intervalType": "periodMS",
+                "interval": "6000"
+            },
+            "sendOption": {
+                "id": "samplecommonSendOption",
+                "sentToCollector": "true",
+                "intervalType": "periodMS",
+                "interval": "6000",
+                "maxRow": "100"
+            },
+            "policies": {
+                "monitoringPerformance": {
+                    "clientPerfResource": {
+                        "id": "clientPerfResource",
+                        "url": "http://localhost:8081/api/wem/manager/da/log/clientperformancelog",
+                        "intervalType": "periodMS",
+                        "interval": "1",
+                        "columns": [
+                            "cpuUsage",
+                            "threadCount",
+                            "handleCount",
+                            "memoryTotal",
+                            "memoryUsed",
+                            "memoryUsage",
+                            "poolPaged",
+                            "machineName",
+                            "poolNonpaged",
+                            "diskRead",
+                            "diskWrite",
+                            "diskTotal",
+                            "diskUsed",
+                            "diskUsage",
+                            "diskTime",
+                            "networkSent",
+                            "networkReceived",
+                            "networkUsed",
+                            "cpuTemperature",
+                            "memoryVirtualTotal",
+                            "timeCreated"
+                        ],
+                        "gatherThreshold": {
+                            "id": "sampleclientPerfResourcegatherThreshold",
+                            "cpuUsage": "90",
+                            "diskUsage": "90",
+                            "memoryUsage": "90",
+                            "intervalType": "periodMS",
+                            "interval": "1000"
+                        },
+                        "sendOption": {
+                            "id": "sampleclientPerfResourcesendOption",
+                            "sentToCollector": "true",
+                            "intervalType": "periodMS",
+                            "interval": "1000",
+                            "maxRow": "100"
+                        },
+                        "specialColumns": null,
+                        "conditions": null,
+                        "constraint": null,
+                        "extraTarget": {
+                            "conditions": null,
+                            "detectState": null
+                        },
+                        "selectOption": null,
+                        "privateSector": null
+                    }
+                },
+                "collectWindowsEvent": {
+                    "blueScreen": {
+                        "id": "blueScreen",
+                        "url": "http://localhost:8081/api/wem/manager/da/log/windowsbluescreenlog",
+                        "intervalType": "once",
+                        "interval": "1",
+                        "columns": [
+                            "channel",
+                            "level",
+                            "id",
+                            "activityId",
+                            "keywords",
+                            "levelDisplayName",
+                            "logName",
+                            "machineName",
+                            "opcode",
+                            "opcodeDisplayName",
+                            "processId",
+                            "providerId",
+                            "providerName",
+                            "qualifiers",
+                            "recordId",
+                            "relatedActivityId",
+                            "task",
+                            "taskDisplayName",
+                            "threadId",
+                            "timeCreated",
+                            "securityUserId",
+                            "version",
+                            "message",
+                            "properties",
+                            "minidump"
+                        ],
+                        "gatherThreshold": {
+                            "id": "sampleblueScreengatherThreshold",
+                            "cpuUsage": "90",
+                            "diskUsage": "90",
+                            "memoryUsage": "90",
+                            "intervalType": "periodMS",
+                            "interval": "1000"
+                        },
+                        "sendOption": {
+                            "id": "sampleblueScreensendOption",
+                            "sentToCollector": "true",
+                            "intervalType": "periodMS",
+                            "interval": "1000",
+                            "maxRow": "100"
+                        },
+                        "specialColumns": null,
+                        "conditions": [
+                            {
+                                "conditionId": "sampleblueScreencondition0",
+                                "id": "1001",
+                                "level": "2",
+                                "channel": "System",
+                                "provider": "",
+                                "date": "",
+                                "keywords": ""
+                            }
+                        ],
+                        "constraint": null,
+                        "extraTarget": {
+                            "conditions": null,
+                            "detectState": null
+                        },
+                        "selectOption": null,
+                        "privateSector": null
+                    },
+                    "applicationError": {
+                        "id": "applicationError",
+                        "url": "http://localhost:8081/api/wem/manager/da/log/applicationerrorlog",
+                        "intervalType": "immediately",
+                        "interval": "0",
+                        "columns": [
+                            "channel",
+                            "level",
+                            "id",
+                            "activityId",
+                            "keywords",
+                            "levelDisplayName",
+                            "logName",
+                            "machineName",
+                            "opcode",
+                            "opcodeDisplayName",
+                            "processId",
+                            "providerId",
+                            "providerName",
+                            "qualifiers",
+                            "recordId",
+                            "relatedActivityId",
+                            "task",
+                            "taskDisplayName",
+                            "threadId",
+                            "timeCreated",
+                            "securityUserId",
+                            "version",
+                            "message",
+                            "properties"
+                        ],
+                        "gatherThreshold": {
+                            "id": "sampleapplicationErrorgatherThreshold",
+                            "cpuUsage": "90",
+                            "diskUsage": "90",
+                            "memoryUsage": "90",
+                            "intervalType": "periodMS",
+                            "interval": "1000"
+                        },
+                        "sendOption": {
+                            "id": "sampleapplicationErrorsendOption",
+                            "sentToCollector": "true",
+                            "intervalType": "periodMS",
+                            "interval": "1000",
+                            "maxRow": "100"
+                        },
+                        "specialColumns": null,
+                        "conditions": [
+                            {
+                                "conditionId": "sampleapplicationErrorcondition0",
+                                "id": "",
+                                "level": "1,2",
+                                "channel": "Setup",
+                                "provider": "",
+                                "date": "",
+                                "keywords": ""
+                            },
+                            {
+                                "conditionId": "sampleapplicationErrorcondition1",
+                                "id": "",
+                                "level": "1,2",
+                                "channel": "System",
+                                "provider": "",
+                                "date": "",
+                                "keywords": ""
+                            },
+                            {
+                                "conditionId": "sampleapplicationErrorcondition2",
+                                "id": "1000",
+                                "level": "2",
+                                "channel": "Application",
+                                "provider": "",
+                                "date": "",
+                                "keywords": ""
+                            }
+                        ],
+                        "constraint": null,
+                        "extraTarget": {
+                            "conditions": null,
+                            "detectState": null
+                        },
+                        "selectOption": null,
+                        "privateSector": null
+                    },
+                    "hardwareError": {
+                        "id": "hardwareError",
+                        "url": "http://localhost:8081/api/wem/manager/da/log/hwerrorlog",
+                        "intervalType": "once",
+                        "interval": "1",
+                        "columns": [
+                            "channel",
+                            "level",
+                            "id",
+                            "activityId",
+                            "keywords",
+                            "levelDisplayName",
+                            "logName",
+                            "machineName",
+                            "opcode",
+                            "opcodeDisplayName",
+                            "processId",
+                            "providerId",
+                            "providerName",
+                            "qualifiers",
+                            "recordId",
+                            "relatedActivityId",
+                            "task",
+                            "taskDisplayName",
+                            "threadId",
+                            "timeCreated",
+                            "securityUserId",
+                            "version",
+                            "message",
+                            "properties"
+                        ],
+                        "gatherThreshold": {
+                            "id": "samplehardwareErrorgatherThreshold",
+                            "cpuUsage": "90",
+                            "diskUsage": "90",
+                            "memoryUsage": "90",
+                            "intervalType": "periodMS",
+                            "interval": "1000"
+                        },
+                        "sendOption": {
+                            "id": "samplehardwareErrorsendOption",
+                            "sentToCollector": "true",
+                            "intervalType": "periodMS",
+                            "interval": "1000",
+                            "maxRow": "100"
+                        },
+                        "specialColumns": null,
+                        "conditions": [
+                            {
+                                "conditionId": "samplehardwareErrorcondition0",
+                                "id": "",
+                                "level": "2",
+                                "channel": "Microsoft-Windows-Kernel-WHEA/Operational",
+                                "provider": "",
+                                "date": "",
+                                "keywords": ""
+                            },
+                            {
+                                "conditionId": "samplehardwareErrorcondition1",
+                                "id": "",
+                                "level": "",
+                                "channel": "System",
+                                "provider": "Microsoft-Windows-WHEA-Logger",
+                                "date": "",
+                                "keywords": ""
+                            }
+                        ],
+                        "constraint": null,
+                        "extraTarget": {
+                            "conditions": null,
+                            "detectState": null
+                        },
+                        "selectOption": null,
+                        "privateSector": null
+                    },
+                    "userTermMonitorLog": {
+                        "id": "userTermMonitorLog",
+                        "url": "http://localhost:8081/api/wem/manager/da/log/clientusertermmonitorlog",
+                        "intervalType": "once",
+                        "interval": "1",
+                        "columns": [
+                            "channel",
+                            "level",
+                            "id",
+                            "activityId",
+                            "keywords",
+                            "levelDisplayName",
+                            "logName",
+                            "machineName",
+                            "opcode",
+                            "opcodeDisplayName",
+                            "processId",
+                            "providerId",
+                            "providerName",
+                            "qualifiers",
+                            "recordId",
+                            "relatedActivityId",
+                            "task",
+                            "taskDisplayName",
+                            "threadId",
+                            "timeCreated",
+                            "securityUserId",
+                            "version",
+                            "message",
+                            "properties"
+                        ],
+                        "gatherThreshold": {
+                            "id": "sampleuserTermMonitorLoggatherThreshold",
+                            "cpuUsage": "90",
+                            "diskUsage": "90",
+                            "memoryUsage": "90",
+                            "intervalType": "periodMS",
+                            "interval": "1000"
+                        },
+                        "sendOption": {
+                            "id": "sampleuserTermMonitorLogsendOption",
+                            "sentToCollector": "true",
+                            "intervalType": "periodMS",
+                            "interval": "1000",
+                            "maxRow": "100"
+                        },
+                        "specialColumns": [
+                            {
+                                "name": "userEventID",
+                                "referenceColumn": "properties",
+                                "regexpr": "^\\d{4}",
+                                "referenceSource": "regexpr",
+                                "eventDataName": null
+                            },
+                            {
+                                "name": "userEventData",
+                                "referenceColumn": "properties",
+                                "regexpr": "(?<=\\d{4}:).*$",
+                                "referenceSource": "regexpr",
+                                "eventDataName": null
+                            }
+                        ],
+                        "conditions": [
+                            {
+                                "conditionId": "sampleuserTermMonitorLogcondition0",
+                                "id": "9999",
+                                "level": "",
+                                "channel": "ShbTermMonitorLog",
+                                "provider": "ShbTermMonitor",
+                                "date": "",
+                                "keywords": ""
+                            }
+                        ],
+                        "constraint": null,
+                        "extraTarget": {
+                            "conditions": null,
+                            "detectState": null
+                        },
+                        "selectOption": null,
+                        "privateSector": null
+                    },
+                    "collectWindowsEventLog": {
+                        "id": "collectWindowsEventLog",
+                        "url": "http://localhost:8081/api/wem/manager/da/log/windowseventsystemerroralllog",
+                        "intervalType": "once",
+                        "interval": "1",
+                        "columns": [
+                            "channel",
+                            "level",
+                            "id",
+                            "activityId",
+                            "keywords",
+                            "levelDisplayName",
+                            "logName",
+                            "machineName",
+                            "opcode",
+                            "opcodeDisplayName",
+                            "processId",
+                            "providerId",
+                            "providerName",
+                            "qualifiers",
+                            "recordId",
+                            "relatedActivityId",
+                            "task",
+                            "taskDisplayName",
+                            "threadId",
+                            "timeCreated",
+                            "securityUserId",
+                            "version",
+                            "message",
+                            "properties"
+                        ],
+                        "gatherThreshold": {
+                            "id": "samplecollectWindowsEventLoggatherThreshold",
+                            "cpuUsage": "90",
+                            "diskUsage": "90",
+                            "memoryUsage": "90",
+                            "intervalType": "periodMS",
+                            "interval": "1000"
+                        },
+                        "sendOption": {
+                            "id": "samplecollectWindowsEventLogsendOption",
+                            "sentToCollector": "true",
+                            "intervalType": "periodMS",
+                            "interval": "1000",
+                            "maxRow": "100"
+                        },
+                        "specialColumns": null,
+                        "conditions": [
+                            {
+                                "conditionId": "samplecollectWindowsEventLogcondition0",
+                                "id": "",
+                                "level": "2,3",
+                                "channel": "Application",
+                                "provider": "",
+                                "date": "",
+                                "keywords": ""
+                            },
+                            {
+                                "conditionId": "samplecollectWindowsEventLogcondition1",
+                                "id": "",
+                                "level": "2,3",
+                                "channel": "Setup",
+                                "provider": "",
+                                "date": "",
+                                "keywords": ""
+                            },
+                            {
+                                "conditionId": "samplecollectWindowsEventLogcondition2",
+                                "id": "",
+                                "level": "2,3",
+                                "channel": "System",
+                                "provider": "",
+                                "date": "",
+                                "keywords": ""
+                            },
+                            {
+                                "conditionId": "samplecollectWindowsEventLogcondition3",
+                                "id": "",
+                                "level": "0",
+                                "channel": "Security",
+                                "provider": "",
+                                "date": "",
+                                "keywords": "0x8020000000000000"
+                            }
+                        ],
+                        "constraint": {
+                            "id": "",
+                            "delayMillis": "500",
+                            "limitRow": "500",
+                            "invokeByCondition": "true"
+                        },
+                        "extraTarget": {
+                            "conditions": [
+                                {
+                                    "conditionId": "samplecollectWindowsEventLogextraCondition0",
+                                    "id": "",
+                                    "level": "",
+                                    "channel": "Application",
+                                    "provider": "",
+                                    "date": "",
+                                    "keywords": ""
+                                },
+                                {
+                                    "conditionId": "samplecollectWindowsEventLogextraCondition1",
+                                    "id": "",
+                                    "level": "",
+                                    "channel": "System",
+                                    "provider": "",
+                                    "date": "",
+                                    "keywords": ""
+                                },
+                                {
+                                    "conditionId": "samplecollectWindowsEventLogextraCondition2",
+                                    "id": "",
+                                    "level": "",
+                                    "channel": "Security",
+                                    "provider": "",
+                                    "date": "",
+                                    "keywords": ""
+                                },
+                                {
+                                    "conditionId": "samplecollectWindowsEventLogextraCondition3",
+                                    "id": "",
+                                    "level": "",
+                                    "channel": "Setup",
+                                    "provider": "",
+                                    "date": "",
+                                    "keywords": ""
+                                }
+                            ],
+                            "detectState": [
+                                {
+                                    "detectStateId": "samplecollectWindowsEventLogextraDetectState0",
+                                    "compareType": "Percent",
+                                    "compareOper": "Over",
+                                    "compareValue": "50"
+                                },
+                                {
+                                    "detectStateId": "samplecollectWindowsEventLogextraDetectState1",
+                                    "compareType": "Count",
+                                    "compareOper": "Over",
+                                    "compareValue": "100000"
+                                }
+                            ]
+                        },
+                        "selectOption": null,
+                        "privateSector": null
+                    },
+                    "pcOnOffEventLog": {
+                        "id": "pcOnOffEventLog",
+                        "url": "http://localhost:8081/api/wem/manager/da/log/pconoffeventlog",
+                        "intervalType": "once",
+                        "interval": "1",
+                        "columns": [
+                            "channel",
+                            "level",
+                            "id",
+                            "activityId",
+                            "keywords",
+                            "levelDisplayName",
+                            "logName",
+                            "machineName",
+                            "opcode",
+                            "opcodeDisplayName",
+                            "processId",
+                            "providerId",
+                            "providerName",
+                            "qualifiers",
+                            "recordId",
+                            "relatedActivityId",
+                            "task",
+                            "taskDisplayName",
+                            "threadId",
+                            "timeCreated",
+                            "securityUserId",
+                            "version",
+                            "message",
+                            "properties"
+                        ],
+                        "gatherThreshold": {
+                            "id": "samplepcOnOffEventLoggatherThreshold",
+                            "cpuUsage": "90",
+                            "diskUsage": "90",
+                            "memoryUsage": "90",
+                            "intervalType": "periodMS",
+                            "interval": "1000"
+                        },
+                        "sendOption": {
+                            "id": "samplepcOnOffEventLogsendOption",
+                            "sentToCollector": "true",
+                            "intervalType": "periodMS",
+                            "interval": "1000",
+                            "maxRow": "100"
+                        },
+                        "specialColumns": null,
+                        "conditions": [
+                            {
+                                "conditionId": "samplepcOnOffEventLogcondition0",
+                                "id": "12",
+                                "level": "4",
+                                "channel": "System",
+                                "provider": "Microsoft-Windows-Kernel-General",
+                                "date": "",
+                                "keywords": ""
+                            },
+                            {
+                                "conditionId": "samplepcOnOffEventLogcondition1",
+                                "id": "13",
+                                "level": "4",
+                                "channel": "System",
+                                "provider": "Microsoft-Windows-Kernel-General",
+                                "date": "",
+                                "keywords": ""
+                            }
+                        ],
+                        "constraint": null,
+                        "extraTarget": {
+                            "conditions": null,
+                            "detectState": null
+                        },
+                        "selectOption": null,
+                        "privateSector": null
+                    },
+                    "deviceDriverError": {
+                        "id": "deviceDriverError",
+                        "url": "http://localhost:8081/api/wem/manager/da/log/deviceerrorlog",
+                        "intervalType": "once",
+                        "interval": "1",
+                        "columns": [
+                            "channel",
+                            "level",
+                            "id",
+                            "activityId",
+                            "keywords",
+                            "levelDisplayName",
+                            "logName",
+                            "machineName",
+                            "opcode",
+                            "opcodeDisplayName",
+                            "processId",
+                            "providerId",
+                            "providerName",
+                            "qualifiers",
+                            "recordId",
+                            "relatedActivityId",
+                            "task",
+                            "taskDisplayName",
+                            "threadId",
+                            "timeCreated",
+                            "securityUserId",
+                            "version",
+                            "message",
+                            "properties"
+                        ],
+                        "gatherThreshold": {
+                            "id": "sampledeviceDriverErrorgatherThreshold",
+                            "cpuUsage": "90",
+                            "diskUsage": "90",
+                            "memoryUsage": "90",
+                            "intervalType": "periodMS",
+                            "interval": "1000"
+                        },
+                        "sendOption": {
+                            "id": "sampledeviceDriverErrorsendOption",
+                            "sentToCollector": "true",
+                            "intervalType": "periodMS",
+                            "interval": "1000",
+                            "maxRow": "100"
+                        },
+                        "specialColumns": null,
+                        "conditions": [
+                            {
+                                "conditionId": "sampledeviceDriverErrorcondition0",
+                                "id": "411",
+                                "level": "2",
+                                "channel": "Microsoft-Windows-Kernel-PnP/Configuration",
+                                "provider": "",
+                                "date": "",
+                                "keywords": ""
+                            }
+                        ],
+                        "constraint": null,
+                        "extraTarget": {
+                            "conditions": null,
+                            "detectState": null
+                        },
+                        "selectOption": null,
+                        "privateSector": null
+                    },
+                    "processCreationLog": {
+                        "id": "processCreationLog",
+                        "url": "http://localhost:8081/api/wem/manager/da/log/clientprocesscreationlog",
+                        "intervalType": "periodMS",
+                        "interval": "10",
+                        "columns": [
+                            "channel",
+                            "level",
+                            "id",
+                            "keywords",
+                            "timeCreated",
+                            "timeCreatedSystemTime"
+                        ],
+                        "gatherThreshold": {
+                            "id": null,
+                            "cpuUsage": "90",
+                            "diskUsage": "90",
+                            "memoryUsage": "90",
+                            "intervalType": "periodMS",
+                            "interval": "1000"
+                        },
+                        "sendOption": {
+                            "id": null,
+                            "sentToCollector": "true",
+                            "intervalType": "periodMS",
+                            "interval": "1000",
+                            "maxRow": "100"
+                        },
+                        "specialColumns": [
+                            {
+                                "name": "newProcessId",
+                                "referenceColumn": "properties",
+                                "regexpr": null,
+                                "referenceSource": "eventDataName",
+                                "eventDataName": "NewProcessId"
+                            },
+                            {
+                                "name": "newProcessName",
+                                "referenceColumn": "properties",
+                                "regexpr": null,
+                                "referenceSource": "eventDataName",
+                                "eventDataName": "NewProcessName"
+                            },
+                            {
+                                "name": "parentProcessId",
+                                "referenceColumn": "properties",
+                                "regexpr": null,
+                                "referenceSource": "eventDataName",
+                                "eventDataName": "ProcessId"
+                            },
+                            {
+                                "name": "parentProcessName",
+                                "referenceColumn": "properties",
+                                "regexpr": null,
+                                "referenceSource": "eventDataName",
+                                "eventDataName": "ParentProcessName"
+                            }
+                        ],
+                        "conditions": [
+                            {
+                                "conditionId": "",
+                                "id": "4688",
+                                "level": "0",
+                                "channel": "Security",
+                                "provider": "Microsoft-Windows-Security-Auditing",
+                                "date": "",
+                                "keywords": "0x8020000000000000"
+                            }
+                        ],
+                        "constraint": {
+                            "id": "",
+                            "delayMillis": "500",
+                            "limitRow": "500",
+                            "invokeByCondition": "true"
+                        },
+                        "extraTarget": null,
+                        "selectOption": null,
+                        "privateSector": null
+                    }
+                },
+                "monitoringWindowsManagement": {
+                    "clientControlProcessResource": {
+                        "id": "clientControlProcessResource",
+                        "url": "http://localhost:8081/api/wem/manager/da/log/clientcontrolprocessresourcelog",
+                        "intervalType": "immediately",
+                        "interval": "0",
+                        "columns": [
+                            "pid",
+                            "procName",
+                            "procParentPid",
+                            "procSessionID",
+                            "procSid",
+                            "timeCreated",
+                            "execResult"
+                        ],
+                        "gatherThreshold": {
+                            "id": "sampleclientControlProcessResourcegatherThreshold",
+                            "cpuUsage": "90",
+                            "diskUsage": "90",
+                            "memoryUsage": "90",
+                            "intervalType": "periodMS",
+                            "interval": "1000"
+                        },
+                        "sendOption": {
+                            "id": "sampleclientControlProcessResourcesendOption",
+                            "sentToCollector": "true",
+                            "intervalType": "periodMS",
+                            "interval": "1000",
+                            "maxRow": "1"
+                        },
+                        "specialColumns": null,
+                        "conditions": null,
+                        "constraint": null,
+                        "extraTarget": {
+                            "conditions": null,
+                            "detectState": null
+                        },
+                        "selectOption": null,
+                        "privateSector": [
+                            "{\"processName\":\"HShow.exe\",\"crc\":\"\",\"copyright\":\"Inswave\",\"commands\":[\"killProcess\"]}"
+                        ]
+                    },
+                    "clientProgramListResource": {
+                        "id": "clientProgramListResource",
+                        "url": "http://localhost:8081/api/wem/manager/da/log/clientprogramlistresourcelog",
+                        "intervalType": "once",
+                        "interval": "1",
+                        "columns": [
+                            "name",
+                            "version",
+                            "publisher",
+                            "size",
+                            "installDate",
+                            "timeCreated"
+                        ],
+                        "gatherThreshold": {
+                            "id": "sampleclientProgramListResourcegatherThreshold",
+                            "cpuUsage": "90",
+                            "diskUsage": "90",
+                            "memoryUsage": "90",
+                            "intervalType": "periodMS",
+                            "interval": "1000"
+                        },
+                        "sendOption": {
+                            "id": "sampleclientProgramListResourcesendOption",
+                            "sentToCollector": "true",
+                            "intervalType": "periodMS",
+                            "interval": "1000",
+                            "maxRow": "100"
+                        },
+                        "specialColumns": null,
+                        "conditions": null,
+                        "constraint": null,
+                        "extraTarget": {
+                            "conditions": null,
+                            "detectState": null
+                        },
+                        "selectOption": null,
+                        "privateSector": null
+                    },
+                    "clientHWInfoResource": {
+                        "id": "clientHWInfoResource",
+                        "url": "http://localhost:8081/api/wem/manager/da/log/clienthwinforesourcelog",
+                        "intervalType": "once",
+                        "interval": "1",
+                        "columns": [
+                            "osBuildNumber",
+                            "osServicePackVersion",
+                            "osVersion",
+                            "osName",
+                            "osArchitecture",
+                            "osSerialNumber",
+                            "osCaption",
+                            "osStatus",
+                            "pcName",
+                            "pcModel",
+                            "pcManufacturer",
+                            "pcCaption",
+                            "pcSystemType",
+                            "pcStatus",
+                            "cpuName",
+                            "cpuArchitecture",
+                            "cpuManufacturer",
+                            "cpuNumberOfCores",
+                            "cpuThreadCount",
+                            "cpuMaxClockSpeed",
+                            "cpuStatus",
+                            "cpuCaption",
+                            "memName",
+                            "memModel",
+                            "memManufacturer",
+                            "memBankLabel",
+                            "memSerialNumber",
+                            "memSpeed",
+                            "memMemoryType",
+                            "memStatus",
+                            "memCaption",
+                            "memTotalSize",
+                            "memVirtualTotalSize",
+                            "diskName",
+                            "diskModel",
+                            "diskManufacturer",
+                            "diskSerialNumber",
+                            "diskCaption",
+                            "diskInterfaceType",
+                            "diskMediaType",
+                            "diskKBSize",
+                            "diskStatus",
+                            "timeCreated"
+                        ],
+                        "gatherThreshold": {
+                            "id": "sampleclientHWInfoResourcegatherThreshold",
+                            "cpuUsage": "90",
+                            "diskUsage": "90",
+                            "memoryUsage": "90",
+                            "intervalType": "periodMS",
+                            "interval": "1000"
+                        },
+                        "sendOption": {
+                            "id": "sampleclientHWInfoResourcesendOption",
+                            "sentToCollector": "true",
+                            "intervalType": "periodMS",
+                            "interval": "1000",
+                            "maxRow": "100"
+                        },
+                        "specialColumns": null,
+                        "conditions": null,
+                        "constraint": null,
+                        "extraTarget": {
+                            "conditions": null,
+                            "detectState": null
+                        },
+                        "selectOption": null,
+                        "privateSector": [
+                            "{\"arrayClassName\":\"Win32_PhysicalMemory\",\"arrayColumnName\":\"physicalMemory\"}",
+                            "{\"arrayClassName\":\"Win32_DiskDrive\",\"arrayColumnName\":\"diskDrive\"}"
+                        ]
+                    },
+                    "clientProcessResource": {
+                        "id": "clientProcessResource",
+                        "url": "http://localhost:8081/api/wem/manager/da/log/clientresourcelog",
+                        "intervalType": "periodMS",
+                        "interval": "2",
+                        "columns": [
+                            "pid",
+                            "procName",
+                            "procCpuUsage",
+                            "procThreadCount",
+                            "procHandleCount",
+                            "procWorkingSet",
+                            "procPoolPage",
+                            "procPoolNonpaged",
+                            "procIoRead",
+                            "procIoWrite",
+                            "memoryTotal",
+                            "timeCreated",
+                            "procIntegrityLevel",
+                            "procNetworkSent",
+                            "procNetworkReceived",
+                            "procFileDescription"
+                        ],
+                        "gatherThreshold": {
+                            "id": "sampleclientProcessResourcegatherThreshold",
+                            "cpuUsage": "90",
+                            "diskUsage": "90",
+                            "memoryUsage": "90",
+                            "intervalType": "periodMS",
+                            "interval": "1000"
+                        },
+                        "sendOption": {
+                            "id": "sampleclientProcessResourcesendOption",
+                            "sentToCollector": "true",
+                            "intervalType": "periodMS",
+                            "interval": "1000",
+                            "maxRow": "100"
+                        },
+                        "specialColumns": null,
+                        "conditions": null,
+                        "constraint": null,
+                        "extraTarget": {
+                            "conditions": null,
+                            "detectState": null
+                        },
+                        "selectOption": {
+                            "intervalType": "periodMS",
+                            "interval": "5",
+                            "selectMethod": "maxOne"
+                        },
+                        "privateSector": null
+                    },
+                    "clientWindowsUpdateListResource": {
+                        "id": "clientWindowsUpdateListResource",
+                        "url": "http://localhost:8081/api/wem/manager/da/log/clientwindowsupdatelog",
+                        "intervalType": "once",
+                        "interval": "1",
+                        "columns": [
+                            "title",
+                            "date",
+                            "clientApplicationID",
+                            "serverSelection",
+                            "timeCreated"
+                        ],
+                        "gatherThreshold": {
+                            "id": "sampleclientWindowsUpdateListResourcegatherThreshold",
+                            "cpuUsage": "90",
+                            "diskUsage": "90",
+                            "memoryUsage": "90",
+                            "intervalType": "periodMS",
+                            "interval": "1000"
+                        },
+                        "sendOption": {
+                            "id": "sampleclientWindowsUpdateListResourcesendOption",
+                            "sentToCollector": "true",
+                            "intervalType": "periodMS",
+                            "interval": "1000",
+                            "maxRow": "100"
+                        },
+                        "specialColumns": null,
+                        "conditions": null,
+                        "constraint": null,
+                        "extraTarget": {
+                            "conditions": null,
+                            "detectState": null
+                        },
+                        "selectOption": null,
+                        "privateSector": null
+                    },
+                    "clientDefragAnalysisResource": {
+                        "id": "clientDefragAnalysisResource",
+                        "url": "http://localhost:8081/api/wem/manager/da/log/clientdefraganalysisresourcelog",
+                        "intervalType": "once",
+                        "interval": "1",
+                        "columns": [
+                            "driveLetter",
+                            "averageFileSize",
+                            "averageFragmentsPerFile",
+                            "averageFreeSpacePerExtent",
+                            "clusterSize",
+                            "excessFolderFragments",
+                            "filePercentFragmentation",
+                            "fragmentedFolders",
+                            "freeSpace",
+                            "freeSpacePercent",
+                            "largestFreeSpaceExtent",
+                            "mFTPercentInUse",
+                            "mFTRecordCount",
+                            "totalExcessFragments",
+                            "totalFiles",
+                            "totalFolders",
+                            "totalFragmentedFiles",
+                            "totalFreeSpaceExtents",
+                            "totalMFTFragments",
+                            "totalUnmoveableFiles",
+                            "usedSpace",
+                            "volumeName",
+                            "volumeSize",
+                            "timeCreated"
+                        ],
+                        "gatherThreshold": {
+                            "id": "sampleclientDefragAnalysisResourcegatherThreshold",
+                            "cpuUsage": "90",
+                            "diskUsage": "90",
+                            "memoryUsage": "90",
+                            "intervalType": "periodMS",
+                            "interval": "1000"
+                        },
+                        "sendOption": {
+                            "id": "sampleclientDefragAnalysisResourcesendOption",
+                            "sentToCollector": "true",
+                            "intervalType": "periodMS",
+                            "interval": "1000",
+                            "maxRow": "100"
+                        },
+                        "specialColumns": null,
+                        "conditions": null,
+                        "constraint": null,
+                        "extraTarget": {
+                            "conditions": null,
+                            "detectState": null
+                        },
+                        "selectOption": null,
+                        "privateSector": null
+                    },
+                    "clientActivePortListResource": {
+                        "id": "clientActivePortListResource",
+                        "url": "http://localhost:8081/api/wem/manager/da/log/clientactiveportlistresourcelog",
+                        "intervalType": "periodHH",
+                        "interval": "1",
+                        "columns": [
+                            "protocalType",
+                            "localAddress",
+                            "localPort",
+                            "remoteAddress",
+                            "remotePort",
+                            "netState",
+                            "procId",
+                            "procName",
+                            "timeCreated"
+                        ],
+                        "gatherThreshold": {
+                            "id": "sampleclientActivePortListResourcegatherThreshold",
+                            "cpuUsage": "90",
+                            "diskUsage": "90",
+                            "memoryUsage": "90",
+                            "intervalType": "periodMS",
+                            "interval": "1000"
+                        },
+                        "sendOption": {
+                            "id": "sampleclientActivePortListResourcesendOption",
+                            "sentToCollector": "true",
+                            "intervalType": "periodMS",
+                            "interval": "1000",
+                            "maxRow": "100"
+                        },
+                        "specialColumns": null,
+                        "conditions": null,
+                        "constraint": null,
+                        "extraTarget": {
+                            "conditions": null,
+                            "detectState": null
+                        },
+                        "selectOption": null,
+                        "privateSector": null
+                    },
+                    "clientMBRResource": {
+                        "id": "clientMBRResource",
+                        "url": "http://localhost:8081/api/wem/manager/da/log/clientmbrresourcelog",
+                        "intervalType": "once",
+                        "interval": "1",
+                        "columns": [
+                            "name",
+                            "deviceID",
+                            "sectorMBR",
+                            "bootPartition",
+                            "partitionType",
+                            "timeCreated"
+                        ],
+                        "gatherThreshold": {
+                            "id": "sampleclientMBRResourcegatherThreshold",
+                            "cpuUsage": "90",
+                            "diskUsage": "90",
+                            "memoryUsage": "90",
+                            "intervalType": "periodMS",
+                            "interval": "1000"
+                        },
+                        "sendOption": {
+                            "id": "sampleclientMBRResourcesendOption",
+                            "sentToCollector": "true",
+                            "intervalType": "periodMS",
+                            "interval": "1000",
+                            "maxRow": "100"
+                        },
+                        "specialColumns": null,
+                        "conditions": null,
+                        "constraint": null,
+                        "extraTarget": {
+                            "conditions": null,
+                            "detectState": null
+                        },
+                        "selectOption": null,
+                        "privateSector": null
+                    }
+                }
+            }
+        },
+        "error": ""
+    }
+}

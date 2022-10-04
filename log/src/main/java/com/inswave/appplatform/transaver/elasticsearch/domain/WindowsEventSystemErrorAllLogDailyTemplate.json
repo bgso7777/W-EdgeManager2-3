@@ -1,0 +1,172 @@
+{
+  "properties" : {
+    "JKGP" : {
+      "type" : "keyword"
+    },
+    "JKWI" : {
+      "type" : "keyword"
+    },
+    "activityId" : {
+      "type" : "keyword"
+    },
+    "appId" : {
+      "type" : "keyword"
+    },
+    "bookmark" : {
+      "type" : "keyword"
+    },
+    "brNo" : {
+      "type" : "keyword"
+    },
+    "channel" : {
+      "type" : "keyword"
+    },
+    "deptName" : {
+      "type" : "keyword"
+    },
+    "deviceId" : {
+      "type" : "keyword"
+    },
+    "deviceType" : {
+      "type" : "keyword"
+    },
+    "documentId" : {
+      "type" : "keyword"
+    },
+    "eventId" : {
+      "type" : "long"
+    },
+    "firstWork" : {
+      "type" : "keyword"
+    },
+    "hostName" : {
+      "type" : "keyword"
+    },
+    "hwnNo" : {
+      "type" : "keyword"
+    },
+    "indexName" : {
+      "type" : "keyword"
+    },
+    "ip" : {
+      "type" : "keyword"
+    },
+    "keywords" : {
+      "type" : "keyword"
+    },
+    "keywordsDisplayNames" : {
+      "type" : "keyword"
+    },
+    "level" : {
+      "type" : "long"
+    },
+    "levelDisplayName" : {
+      "type" : "keyword"
+    },
+    "logName" : {
+      "type" : "keyword"
+    },
+    "machineName" : {
+      "type" : "keyword"
+    },
+    "maxAddress" : {
+      "type" : "keyword"
+    },
+    "message" : {
+      "type" : "keyword",
+      "ignore_above": 256
+    },
+    "opcode" : {
+      "type" : "short"
+    },
+    "opcodeDisplayName" : {
+      "type" : "keyword"
+    },
+    "osType" : {
+      "type" : "keyword"
+    },
+    "pcName" : {
+      "type" : "keyword"
+    },
+    "phoneNo" : {
+      "type" : "keyword"
+    },
+    "processId" : {
+      "type" : "integer"
+    },
+    "properties" : {
+      "type" : "keyword",
+      "ignore_above": 256
+    },
+    "providerId" : {
+      "type" : "keyword"
+    },
+    "providerName" : {
+      "type" : "keyword"
+    },
+    "qualifiers" : {
+      "type" : "integer"
+    },
+    "recordId" : {
+      "type" : "long"
+    },
+    "relatedActivityId" : {
+      "type" : "keyword"
+    },
+    "securityUserId" : {
+      "type" : "keyword"
+    },
+    "service" : {
+      "type" : "keyword"
+    },
+    "source" : {
+      "type" : "keyword"
+    },
+    "ssoBrNo" : {
+      "type" : "keyword"
+    },
+    "ssoType" : {
+      "type" : "keyword"
+    },
+    "statisticsValue" : {
+      "type" : "keyword"
+    },
+    "task" : {
+      "type" : "integer"
+    },
+    "taskDisplayName" : {
+      "type" : "keyword"
+    },
+    "termNo" : {
+      "type" : "keyword"
+    },
+    "threadId" : {
+      "type" : "integer"
+    },
+    "timeCreated" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "timeCreatedSystemTime" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "timeCurrent" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "timeRegistered" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "userId" : {
+      "type" : "keyword"
+    },
+    "userName" : {
+      "type" : "keyword"
+    },
+    "version" : {
+      "type" : "keyword"
+    }
+  }
+}

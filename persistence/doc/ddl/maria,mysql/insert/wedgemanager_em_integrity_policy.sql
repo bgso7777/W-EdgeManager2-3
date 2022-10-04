@@ -1,0 +1,1 @@
+INSERT INTO wedgemanager.em_integrity_policy (ID, ISTARGETHOME, ISALWAYS) VALUES ('lastTestTwo', 'false', 'true');

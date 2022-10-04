@@ -1,0 +1,283 @@
+{
+  "properties" : {
+    "JKGP" : {
+      "type" : "keyword"
+    },
+    "JKWI" : {
+      "type" : "keyword"
+    },
+    "appId" : {
+      "type" : "keyword"
+    },
+    "associationAnalysisRuleIds" : {
+      "type" : "nested"
+    },
+    "brNo" : {
+      "type" : "keyword"
+    },
+    "childIndexName" : {
+      "type" : "keyword"
+    },
+    "classNames" : {
+      "type" : "keyword"
+    },
+    "currentAssociationAnalysisDocumentIds" : {
+      "type" : "nested"
+    },
+    "deptName" : {
+      "type" : "keyword"
+    },
+    "description" : {
+      "type" : "keyword"
+    },
+    "deviceId" : {
+      "type" : "keyword"
+    },
+    "deviceType" : {
+      "type" : "keyword"
+    },
+    "displayClassNames" : {
+      "type" : "keyword"
+    },
+    "displayFieldNames" : {
+      "type" : "keyword"
+    },
+    "documentId" : {
+      "type" : "keyword"
+    },
+    "failCount" : {
+      "type" : "integer"
+    },
+    "fieldNames" : {
+      "type" : "keyword"
+    },
+    "firstWork" : {
+      "type" : "keyword"
+    },
+    "hostName" : {
+      "type" : "keyword"
+    },
+    "hwnNo" : {
+      "type" : "keyword"
+    },
+    "indexName" : {
+      "type" : "keyword"
+    },
+    "ip" : {
+      "type" : "keyword"
+    },
+    "isAutoFix" : {
+      "type" : "boolean"
+    },
+    "isCheck" : {
+      "type" : "boolean"
+    },
+    "isFollowUp" : {
+      "type" : "boolean"
+    },
+    "isSendMessage" : {
+      "type" : "boolean"
+    },
+    "isSendTerminalErrorSystem" : {
+      "type" : "boolean"
+    },
+    "isShinhanbankAtopTerminalError" : {
+      "type" : "boolean"
+    },
+    "isSystem" : {
+      "type" : "boolean"
+    },
+    "maxAddress" : {
+      "type" : "keyword"
+    },
+    "name" : {
+      "type" : "keyword"
+    },
+    "osType" : {
+      "type" : "keyword"
+    },
+    "pattern" : {
+      "type" : "keyword"
+    },
+    "patternData" : {
+      "type" : "keyword"
+    },
+    "pcName" : {
+      "type" : "keyword"
+    },
+    "phoneNo" : {
+      "type" : "keyword"
+    },
+    "registrationDate" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "ruleAlertLogReceiverData" : {
+      "type" : "nested",
+      "properties" : {
+        "content" : {
+          "type" : "keyword"
+        },
+        "email" : {
+          "type" : "keyword"
+        },
+        "isEmail" : {
+          "type" : "boolean"
+        },
+        "isUrl" : {
+          "type" : "boolean"
+        },
+        "name" : {
+          "type" : "keyword"
+        },
+        "ruleReceiverId" : {
+          "type" : "long"
+        },
+        "senderId" : {
+          "type" : "keyword"
+        },
+        "senderName" : {
+          "type" : "keyword"
+        },
+        "uniqueId" : {
+          "type" : "keyword"
+        }
+      }
+    },
+    "ruleAlertLogShinhanbankAtopTerminalError" : {
+      "type" : "nested",
+      "properties" : {
+        "description" : {
+          "type" : "keyword"
+        },
+        "failCount" : {
+          "type" : "integer"
+        },
+        "failDescriptions" : {
+          "type" : "keyword"
+        },
+        "failIds" : {
+          "type" : "keyword"
+        },
+        "failNames" : {
+          "type" : "keyword"
+        },
+        "faultReg" : {
+          "type" : "boolean"
+        },
+        "integrityPolicyGroupTodayTotalErrorCount" : {
+          "type" : "integer"
+        },
+        "interityPolicyGroupName" : {
+          "type" : "keyword"
+        },
+        "isAutoFix" : {
+          "type" : "boolean"
+        },
+        "isTargetHome" : {
+          "type" : "boolean"
+        },
+        "netClient5" : {
+          "type" : "keyword"
+        },
+        "pcType" : {
+          "type" : "keyword"
+        },
+        "remoteCode" : {
+          "type" : "keyword"
+        },
+        "result" : {
+          "type" : "integer"
+        },
+        "sendErrCnt" : {
+          "type" : "integer"
+        },
+        "timeAutoFix" : {
+          "type" : "date",
+          "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        },
+        "userId" : {
+          "type" : "keyword"
+        },
+        "userName" : {
+          "type" : "keyword"
+        }
+      }
+    },
+    "ruleAlertSendLogIds" : {
+      "type" : "nested"
+    },
+    "ruleId" : {
+      "type" : "long"
+    },
+    "ruleLevelDescription" : {
+      "type" : "keyword"
+    },
+    "ruleLevelId" : {
+      "type" : "long"
+    },
+    "ruleLevelName" : {
+      "type" : "keyword"
+    },
+    "service" : {
+      "type" : "keyword"
+    },
+    "source" : {
+      "type" : "keyword"
+    },
+    "ssoBrNo" : {
+      "type" : "keyword"
+    },
+    "ssoType" : {
+      "type" : "keyword"
+    },
+    "statisticsValue" : {
+      "type" : "keyword"
+    },
+    "termNo" : {
+      "type" : "keyword"
+    },
+    "timeAutoFix" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "timeCreated" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "timeCurrent" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "timeFollowUp" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "timeRegistered" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "timeRegisteredDaily" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "timeSend" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "timeSendTerminalErrorSystem" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "updateDate" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "userId" : {
+      "type" : "keyword"
+    },
+    "userName" : {
+      "type" : "keyword"
+    }
+  }
+}

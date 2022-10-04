@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="agent" />
+        <module name="common" />
+        <module name="manager" />
+        <module name="log" />
+        <module name="log-detector" />
+        <module name="log-transaver" />
+        <module name="channel" />
+        <module name="admin" />
+        <module name="persistence" />
+        <module name="deployer" />
+        <module name="scm" />
+        <module name="authentication" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="admin" target="8" />
+      <module name="agent" target="8" />
+      <module name="authentication" target="8" />
+      <module name="channel" target="8" />
+      <module name="common" target="8" />
+      <module name="deployer" target="8" />
+      <module name="log" target="8" />
+      <module name="log-detector" target="8" />
+      <module name="log-transaver" target="8" />
+      <module name="manager" target="1.8" />
+      <module name="persistence" target="8" />
+      <module name="scm" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="admin" options="-parameters" />
+      <module name="authentication" options="-parameters" />
+      <module name="channel" options="-parameters" />
+      <module name="common" options="-parameters" />
+      <module name="deployer" options="-parameters" />
+      <module name="log" options="-parameters" />
+      <module name="log-detector" options="-parameters" />
+      <module name="log-transaver" options="-parameters" />
+      <module name="manager" options="-parameters" />
+      <module name="persistence" options="-parameters" />
+    </option>
+  </component>
+</project>

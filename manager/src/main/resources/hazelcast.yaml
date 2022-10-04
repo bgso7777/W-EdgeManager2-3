@@ -1,0 +1,19 @@
+hazelcast:
+  instance-name: wem-default-insts
+  network:
+    port:
+      auto-increment: true
+#      port-count: 100
+      port: 5701
+    join:
+      auto-detection:
+        enabled: false
+      multicast:
+        enabled: false
+      tcp-ip:
+        enabled: true
+        member-list:
+          - localhost:5701
+          - localhost:5702
+#  properties:
+#    hazelcast.logging.type: slf4j

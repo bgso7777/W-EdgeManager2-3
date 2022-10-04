@@ -1,0 +1,168 @@
+{
+	"properties": {
+		"JKGP": {
+			"type": "keyword"
+		},
+		"JKWI": {
+			"type": "keyword"
+		},
+		"appId": {
+			"type": "keyword"
+		},
+		"brNo": {
+			"type": "keyword"
+		},
+		"cpuTemperature": {
+			"type": "double"
+		},
+		"cpuUsage": {
+			"type": "double"
+		},
+		"deptName": {
+			"type": "keyword"
+		},
+		"deviceId": {
+			"type": "keyword"
+		},
+		"deviceType": {
+			"type": "keyword"
+		},
+		"diskInfo": {
+			"type": "nested",
+			"properties": {
+				"diskReadIndividual": {
+					"type": "long"
+				},
+				"diskTimeIndividual": {
+					"type": "long"
+				},
+				"diskWriteIndividual": {
+					"type": "long"
+				},
+				"instanceName": {
+					"type": "keyword"
+				},
+				"isSystemDrive": {
+					"type": "boolean"
+				}
+			}
+		},
+		"diskRead": {
+			"type": "double"
+		},
+		"diskTime": {
+			"type": "double"
+		},
+		"diskTotal": {
+			"type": "long"
+		},
+		"diskUsage": {
+			"type": "long"
+		},
+		"diskUsed": {
+			"type": "double"
+		},
+		"diskWrite": {
+			"type": "double"
+		},
+		"documentId": {
+			"type": "keyword"
+		},
+		"firstWork": {
+			"type": "keyword"
+		},
+		"handleCount": {
+			"type": "long"
+		},
+		"hostName": {
+			"type": "keyword"
+		},
+		"hwnNo": {
+			"type": "keyword"
+		},
+		"indexName": {
+			"type": "keyword"
+		},
+		"ip": {
+			"type": "keyword"
+		},
+		"maxAddress": {
+			"type": "keyword"
+		},
+		"memoryTotal": {
+			"type": "long"
+		},
+		"memoryUsage": {
+			"type": "long"
+		},
+		"memoryUsed": {
+			"type": "long"
+		},
+		"memoryVirtualTotal": {
+			"type": "long"
+		},
+		"networkReceived": {
+			"type": "double"
+		},
+		"networkSent": {
+			"type": "double"
+		},
+		"networkUsed": {
+			"type": "long"
+		},
+		"osType": {
+			"type": "keyword"
+		},
+		"pcName": {
+			"type": "keyword"
+		},
+		"phoneNo": {
+			"type": "keyword"
+		},
+		"poolNonpaged": {
+			"type": "long"
+		},
+		"poolPaged": {
+			"type": "long"
+		},
+		"service": {
+			"type": "keyword"
+		},
+		"source": {
+			"type": "keyword"
+		},
+		"ssoBrNo": {
+			"type": "keyword"
+		},
+		"ssoType": {
+			"type": "keyword"
+		},
+		"statisticsValue": {
+			"type": "keyword"
+		},
+		"termNo": {
+			"type": "keyword"
+		},
+		"threadCount": {
+			"type": "long"
+		},
+		"timeCreated": {
+			"type": "date",
+			"format": "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+		},
+		"timeCurrent": {
+			"type": "date",
+			"format": "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+		},
+		"timeRegistered": {
+			"type": "date",
+			"format": "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+		},
+		"userId": {
+			"type": "keyword"
+		},
+		"userName": {
+			"type": "keyword"
+		}
+	}
+}

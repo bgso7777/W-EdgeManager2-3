@@ -1,0 +1,190 @@
+{
+  "properties" : {
+    "JKGP" : {
+      "type" : "keyword"
+    },
+    "JKWI" : {
+      "type" : "keyword"
+    },
+    "appId" : {
+      "type" : "keyword"
+    },
+    "beginOffsets" : {
+      "type" : "long"
+    },
+    "bpms" : {
+      "type" : "long"
+    },
+    "bps" : {
+      "type" : "long"
+    },
+    "brNo" : {
+      "type" : "keyword"
+    },
+    "commitSyncExceptionCount" : {
+      "type" : "integer"
+    },
+    "dailyRowSize" : {
+      "type" : "integer"
+    },
+    "day" : {
+      "type" : "integer"
+    },
+    "dayOfWeek" : {
+      "type" : "integer"
+    },
+    "deptName" : {
+      "type" : "keyword"
+    },
+    "deviceId" : {
+      "type" : "keyword"
+    },
+    "deviceType" : {
+      "type" : "keyword"
+    },
+    "documentId" : {
+      "type" : "keyword"
+    },
+    "elasticsearchCurrentInsert" : {
+      "type" : "long"
+    },
+    "elasticsearchDailyInsert" : {
+      "type" : "long"
+    },
+    "endOffsets" : {
+      "type" : "long"
+    },
+    "exceptionCount" : {
+      "type" : "integer"
+    },
+    "firstWork" : {
+      "type" : "keyword"
+    },
+    "groupId" : {
+      "type" : "keyword"
+    },
+    "hostName" : {
+      "type" : "keyword"
+    },
+    "hour" : {
+      "type" : "integer"
+    },
+    "hwnNo" : {
+      "type" : "keyword"
+    },
+    "indexName" : {
+      "type" : "keyword"
+    },
+    "instanceId" : {
+      "type" : "keyword"
+    },
+    "ip" : {
+      "type" : "keyword"
+    },
+    "jsonProcessingExceptionCount" : {
+      "type" : "integer"
+    },
+    "key" : {
+      "type" : "keyword"
+    },
+    "lastRowSize" : {
+      "type" : "integer"
+    },
+    "maxAddress" : {
+      "type" : "keyword"
+    },
+    "maxRowSize" : {
+      "type" : "integer"
+    },
+    "minRowSize" : {
+      "type" : "integer"
+    },
+    "minutely10" : {
+      "type" : "integer"
+    },
+    "month" : {
+      "type" : "integer"
+    },
+    "objectConvertTime" : {
+      "type" : "long"
+    },
+    "offset" : {
+      "type" : "long"
+    },
+    "osType" : {
+      "type" : "keyword"
+    },
+    "partitionId" : {
+      "type" : "integer"
+    },
+    "pcName" : {
+      "type" : "keyword"
+    },
+    "phoneNo" : {
+      "type" : "keyword"
+    },
+    "processByte" : {
+      "type" : "long"
+    },
+    "processCount" : {
+      "type" : "integer"
+    },
+    "processDateTime" : {
+      "type" : "keyword"
+    },
+    "processOffsets" : {
+      "type" : "long"
+    },
+    "processTime" : {
+      "type" : "long"
+    },
+    "rowSize" : {
+      "type" : "integer"
+    },
+    "runningTime" : {
+      "type" : "long"
+    },
+    "service" : {
+      "type" : "keyword"
+    },
+    "source" : {
+      "type" : "keyword"
+    },
+    "ssoBrNo" : {
+      "type" : "keyword"
+    },
+    "ssoType" : {
+      "type" : "keyword"
+    },
+    "statisticsValue" : {
+      "type" : "keyword"
+    },
+    "termNo" : {
+      "type" : "keyword"
+    },
+    "timeCreated" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "timeCurrent" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "timeRegistered" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "topicName" : {
+      "type" : "keyword"
+    },
+    "userId" : {
+      "type" : "keyword"
+    },
+    "userName" : {
+      "type" : "keyword"
+    },
+    "year" : {
+      "type" : "integer"
+    }
+  }
+}

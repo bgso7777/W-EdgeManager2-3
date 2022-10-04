@@ -1,0 +1,157 @@
+{
+  "properties" : {
+    "JKGP" : {
+      "type" : "keyword"
+    },
+    "JKWI" : {
+      "type" : "keyword"
+    },
+    "appId" : {
+      "type" : "keyword"
+    },
+    "averageFileSize" : {
+      "type" : "long"
+    },
+    "averageFragmentsPerFile" : {
+      "type" : "float"
+    },
+    "averageFreeSpacePerExtent" : {
+      "type" : "long"
+    },
+    "brNo" : {
+      "type" : "keyword"
+    },
+    "clusterSize" : {
+      "type" : "long"
+    },
+    "deptName" : {
+      "type" : "keyword"
+    },
+    "deviceId" : {
+      "type" : "keyword"
+    },
+    "deviceType" : {
+      "type" : "keyword"
+    },
+    "documentId" : {
+      "type" : "keyword"
+    },
+    "driveLetter" : {
+      "type" : "keyword"
+    },
+    "excessFolderFragments" : {
+      "type" : "integer"
+    },
+    "filePercentFragmentation" : {
+      "type" : "integer"
+    },
+    "firstWork" : {
+      "type" : "keyword"
+    },
+    "fragmentedFolders" : {
+      "type" : "integer"
+    },
+    "freeSpace" : {
+      "type" : "double"
+    },
+    "freeSpacePercent" : {
+      "type" : "integer"
+    },
+    "hostName" : {
+      "type" : "keyword"
+    },
+    "hwnNo" : {
+      "type" : "keyword"
+    },
+    "indexName" : {
+      "type" : "keyword"
+    },
+    "ip" : {
+      "type" : "keyword"
+    },
+    "largestFreeSpaceExtent" : {
+      "type" : "double"
+    },
+    "mFTPercentInUse" : {
+      "type" : "long"
+    },
+    "mFTRecordCount" : {
+      "type" : "long"
+    },
+    "maxAddress" : {
+      "type" : "keyword"
+    },
+    "osType" : {
+      "type" : "keyword"
+    },
+    "pcName" : {
+      "type" : "keyword"
+    },
+    "phoneNo" : {
+      "type" : "keyword"
+    },
+    "service" : {
+      "type" : "keyword"
+    },
+    "source" : {
+      "type" : "keyword"
+    },
+    "ssoBrNo" : {
+      "type" : "keyword"
+    },
+    "ssoType" : {
+      "type" : "keyword"
+    },
+    "statisticsValue" : {
+      "type" : "keyword"
+    },
+    "termNo" : {
+      "type" : "keyword"
+    },
+    "timeCreated" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "timeCurrent" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "timeRegistered" : {
+      "type" : "date",
+      "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    },
+    "totalExcessFragments" : {
+      "type" : "integer"
+    },
+    "totalFiles" : {
+      "type" : "integer"
+    },
+    "totalFolders" : {
+      "type" : "integer"
+    },
+    "totalFragmentedFiles" : {
+      "type" : "integer"
+    },
+    "totalFreeSpaceExtents" : {
+      "type" : "double"
+    },
+    "totalMFTFragments" : {
+      "type" : "integer"
+    },
+    "usedSpace" : {
+      "type" : "double"
+    },
+    "userId" : {
+      "type" : "keyword"
+    },
+    "userName" : {
+      "type" : "keyword"
+    },
+    "volumeName" : {
+      "type" : "keyword"
+    },
+    "volumeSize" : {
+      "type" : "long"
+    }
+  }
+}

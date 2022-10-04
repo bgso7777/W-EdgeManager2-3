@@ -1,0 +1,15 @@
+1. 변환규칙
+- BIGINT -> NUMBER(19)
+- VARCHAR -> NVARCHAR2
+- BIT -> NUMBER(1)
+- INT -> NUMBER(11)
+- DATETIME -> TIMESTAMP
+- VARCHAR(20000) -> CLOB
+- LONGTEXT -> CLOB
+
+- column comment 제거
+- primary key syntax 변경
+
+2. 오타수정
+- em_conditions_Group -> em_conditions_group
+- SESSIONSATE -> SESSIONSTATE

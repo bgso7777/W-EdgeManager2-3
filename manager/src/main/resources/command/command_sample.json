@@ -1,0 +1,13 @@
+{
+  "header": {
+    "source": null,
+    "service": "command",
+    "destination": null
+  },
+  "body": {
+    "command": {
+      "url": "${MANAGER_URL}/dc/policy/${COMMAND_TYPE}",
+      "commandId": "${COMMAND_ID}"
+    }
+  }
+}

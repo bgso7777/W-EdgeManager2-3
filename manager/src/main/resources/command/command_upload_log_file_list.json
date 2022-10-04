@@ -1,0 +1,16 @@
+{
+  "header": {
+    "source": null,
+    "service": "command",
+    "destination": null
+  },
+  "body": {
+    "commandId": "${COMMAND_ID}",
+    "method": "GetFileInfoList",
+    "parameters": {
+      "baseDir": "",
+      "recursive": "true"
+    },
+    "resultUrl": "${MANAGER_URL}/dc/summit/${COMMAND_TYPE}"
+  }
+}

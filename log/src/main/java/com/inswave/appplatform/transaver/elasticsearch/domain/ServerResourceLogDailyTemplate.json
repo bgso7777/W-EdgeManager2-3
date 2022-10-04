@@ -1,0 +1,133 @@
+{
+  "properties" : {
+	"JKGP" : {
+	  "type" : "keyword"
+	},
+	"JKWI" : {
+	  "type" : "keyword"
+	},
+	"appId" : {
+	  "type" : "keyword"
+	},
+	"brNo" : {
+	  "type" : "keyword"
+	},
+	"cpuUsage" : {
+	  "type" : "double"
+	},
+	"deptName" : {
+	  "type" : "keyword"
+	},
+	"destination" : {
+	  "type" : "keyword"
+	},
+	"deviceId" : {
+	  "type" : "keyword"
+	},
+	"deviceType" : {
+	  "type" : "keyword"
+	},
+	"diskTotal" : {
+	  "type" : "long"
+	},
+	"diskUsage" : {
+	  "type" : "double"
+	},
+	"diskUsed" : {
+	  "type" : "long"
+	},
+	"documentId" : {
+	  "type" : "keyword"
+	},
+	"firstWork" : {
+	  "type" : "keyword"
+	},
+	"hostName" : {
+	  "type" : "keyword"
+	},
+	"hwnNo" : {
+	  "type" : "keyword"
+	},
+	"indexName" : {
+	  "type" : "keyword"
+	},
+	"ip" : {
+	  "type" : "keyword"
+	},
+	"maxAddress" : {
+	  "type" : "keyword"
+	},
+	"memoryAvailable" : {
+	  "type" : "long"
+	},
+	"memoryTotal" : {
+	  "type" : "long"
+	},
+	"memoryUsage" : {
+	  "type" : "double"
+	},
+	"memoryUsed" : {
+	  "type" : "long"
+	},
+	"msgId" : {
+	  "type" : "keyword"
+	},
+	"networkReceived" : {
+	  "type" : "double"
+	},
+	"networkSent" : {
+	  "type" : "double"
+	},
+	"osType" : {
+	  "type" : "keyword"
+	},
+	"pcName" : {
+	  "type" : "keyword"
+	},
+	"phoneNo" : {
+	  "type" : "keyword"
+	},
+	"service" : {
+	  "type" : "keyword"
+	},
+	"siteId" : {
+	  "type" : "double"
+	},
+	"siteName" : {
+	  "type" : "keyword"
+	},
+	"source" : {
+	  "type" : "keyword"
+	},
+	"ssoBrNo" : {
+	  "type" : "keyword"
+	},
+	"ssoType" : {
+	  "type" : "keyword"
+	},
+	"statisticsValue" : {
+	  "type" : "keyword"
+	},
+	"termNo" : {
+	  "type" : "keyword"
+	},
+	"timeCreated" : {
+	  "type" : "date",
+	  "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+	},
+	"timeCurrent" : {
+	  "type" : "date",
+	  "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+	},
+	"timeRegistered" : {
+	  "type" : "date",
+	  "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+	},
+	"userId" : {
+	  "type" : "keyword"
+	},
+	"userName" : {
+	  "type" : "keyword"
+	}
+  }
+}

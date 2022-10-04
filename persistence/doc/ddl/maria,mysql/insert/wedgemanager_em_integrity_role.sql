@@ -1,0 +1,4 @@
+INSERT INTO wedgemanager.em_integrity_role (_INDEX, INTEGRITYPOLICYID, TYPE, PARAMETER, SCRIPT, WAIT) VALUES ('20210929171319RULE0', 'lastTestTwo', 'INI', '{"filename":"","section":"","key":"","value":""}', null, 'true');
+INSERT INTO wedgemanager.em_integrity_role (_INDEX, INTEGRITYPOLICYID, TYPE, PARAMETER, SCRIPT, WAIT) VALUES ('20210929171319RULE1', 'lastTestTwo', 'FILE_EXIST', '{"filename":"","isExist":"true"}', null, 'true');
+INSERT INTO wedgemanager.em_integrity_role (_INDEX, INTEGRITYPOLICYID, TYPE, PARAMETER, SCRIPT, WAIT) VALUES ('20210929171319RULE2', 'lastTestTwo', 'FILE_CRC', '{"filename":"","crc":""}', null, 'true');
+INSERT INTO wedgemanager.em_integrity_role (_INDEX, INTEGRITYPOLICYID, TYPE, PARAMETER, SCRIPT, WAIT) VALUES ('20210929171319RULE3', 'lastTestTwo', 'INI', '{"filename":"","section":"","key":"","value":""}', null, 'true');
