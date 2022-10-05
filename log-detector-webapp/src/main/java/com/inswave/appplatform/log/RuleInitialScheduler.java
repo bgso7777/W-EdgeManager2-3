@@ -2,6 +2,7 @@ package com.inswave.appplatform.log;
 
 import com.inswave.appplatform.Config;
 import com.inswave.appplatform.Constants;
+import com.inswave.appplatform.log.ConstantsLog;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 

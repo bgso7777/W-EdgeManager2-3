@@ -1,4 +1,4 @@
-package com.inswave.appplatform.core.requestcontroller;
+package com.inswave.appplatform.requestcontroller;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.inswave.appplatform.Constants;

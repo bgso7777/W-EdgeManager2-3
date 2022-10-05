@@ -1,4 +1,4 @@
-package com.inswave.appplatform.core.requestcontroller;
+package com.inswave.appplatform.requestcontroller;
 
 import com.inswave.appplatform.Constants;
 import com.inswave.appplatform.LanguagePack;
