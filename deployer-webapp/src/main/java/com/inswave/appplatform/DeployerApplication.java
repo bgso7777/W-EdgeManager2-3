@@ -1,5 +1,6 @@
 package com.inswave.appplatform;
 
+import com.inswave.appplatform.Config;
 import com.inswave.appplatform.core.AppplatformSpringApplication;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
